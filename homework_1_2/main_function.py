@@ -50,7 +50,8 @@ def get_dependencies(name_of_pack):
         return
 
 #3.print_pack() - функция, которая выводит зависимости в таком виде, 
-#чтобы можно было сразу использовать полученные зависимости для построения строк графа (graphviz)
+#чтобы можно было сразу использовать полученные зависимости для 
+#построения строк графа (graphviz)
 def print_pack(name_of_pack, pack):
     print('  ' + name_of_pack + ' -> ' + pack + ';') 
 
@@ -61,7 +62,8 @@ def print_digraph_G(name_of_pack):
     get_dependencies(name_of_pack)
     print('}')
     
-#5.main()-главная функция, с помощью которой осуществляется запуск программы, в результате выводится граф зависимостей(Graph dependencies)
+#5.main()-главная функция, с помощью которой осуществляется запуск программы, 
+#в результате выводится граф зависимостей(Graph dependencies)
 def main_function():
     name_of_pack = input()
     print_digraph_G(name_of_pack)
